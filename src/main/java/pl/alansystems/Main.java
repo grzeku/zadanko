@@ -1,5 +1,10 @@
-package pl.alansystems;public class Main {
+package pl.alansystems;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+
+        EventStreamReader esr = new EventStreamReader(new StatisticsService());
+        esr.readEventStream();
     }
 }
